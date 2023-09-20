@@ -2,7 +2,8 @@
 
 :root{
     --nintendoRed: #E60012;
-    --cristalRed: #e600124d;
+    --cristalRed: rgba(191, 0, 16, 0.5);
+    --cristalBlack: rgba(31, 31, 31, 0.5);
     --white: #fafafa;
     --nintendoRedHover: #BF0010;
     --black: #1f1f1f;
@@ -63,30 +64,29 @@ header .title h4{
 
 .navbar .navLinks{
     display: flex;
-    gap: 0 .8em;
+    gap: 0 1.2em;
 }
 
 .navbar .navLinks .navLink{
     display: inline-block;
-    padding: .8em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: transparent;
+    transition: var(--transition);
+}
+.navbar .navLinks .navLink:hover{
+    background: var(--cristalRed);
 }
 
 .navbar .navLinks .navLink a, i{
     color: var(--white);
     font-weight: 600;
-    font-size: 1.20em;
-    transition: var(--transition);
-    border-bottom: 2px solid transparent;
-}
-.navbar .navLinks .navLink a:hover{
-    border-bottom: 2px solid var(--white);
+    font-size: 1.1em;
 }
 
-.navbar .navLinks .navLink i{
-    margin-left: 6px;
-}
-.navbar .navLinks .navLink .vertical-menu{
-    width: 200px;
+.navLink .vertical-menu{
+    display: none;
+    position: absolute;
     text-align: center;
     background: var(--cristalRed);
     border-radius: 4px;
@@ -97,7 +97,7 @@ header .title h4{
 }
 
 .vertical-menu li{
-    margin: 12px 0;
+    padding: 8px 24px;
     cursor: pointer;
     transition: var(--transition);
 }
@@ -109,4 +109,9 @@ header .title h4{
     color: var(--white);
     font-weight: 600;
     font-size: 1.15em;
+}
+
+.navbar .navLinks .navLink:nth-child(2):hover .vertical-menu
+{
+    display: block;
 }
