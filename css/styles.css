@@ -162,14 +162,14 @@ header .title h4{
     padding: var(--innerWidth);
     color: var(--white);
     display: grid;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(7, auto);
     grid-template-rows: repeat(6, auto);
     background: rgb(49, 177, 76);
-    gap: 3em;
+    gap: 1em;
 }
 
 .recentGuides{
-    grid-area: 1/1/5/5;
+    grid-area: 1/1/5/4;
     border: solid palevioletred;
 
 }
@@ -186,7 +186,7 @@ header .title h4{
 }*/
 
 .popularGuides{
-    grid-area: 1/5/3/8;
+    grid-area: 1/4/3/7;
     border: solid green;
     display: flex;
     flex-direction: column;
@@ -199,11 +199,11 @@ header .title h4{
 }
 
 .subscribeContainer{
-    grid-area: 3/5/4/8;
+    grid-area: 3/5/4/7;
     border: solid red;
 }
 
 .socialMedia{
-    grid-area: 5/1/5/8;
+    grid-area: 5/1/5/7;
     border: solid blue;
 }
