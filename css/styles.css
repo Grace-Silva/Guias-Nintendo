@@ -16,13 +16,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
     outline: none;
     text-decoration: none;
+    list-style: none;
 }
 
 html{
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -31,6 +31,7 @@ body{
     background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(31,31,31,0.5) 50%, rgba(0,0,0,1) 100%), url("../img/pattern.png");  
     min-height: 100vh;
     background-repeat: repeat;
+    overflow-x: hidden;
 }
 
 header .title{
@@ -150,4 +151,59 @@ header .title h4{
     color: var(--white);
     font-style: italic;
     font-size: 14px;
+}
+
+/* main section */
+.gridContainer{
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    border: solid black;
+    padding: var(--innerWidth);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(6, auto);
+    background: rgb(49, 177, 76);
+    gap: 3em;
+}
+
+.recentGuides{
+    grid-area: 1/1/5/5;
+    border: solid palevioletred;
+
+}
+
+.recentGuides .mainGuide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.gridContainer .recentGuides .mainGuide .mainGuideImg{
+    width: 100%;
+}*/
+
+.popularGuides{
+    grid-area: 1/5/3/8;
+    border: solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popularGuides .popularGuidesContainer img{
+    width: 150px;
+}
+
+.subscribeContainer{
+    grid-area: 3/5/4/8;
+    border: solid red;
+}
+
+.socialMedia{
+    grid-area: 5/1/5/8;
+    border: solid blue;
 }
