@@ -163,13 +163,13 @@ header .title h4{
     color: var(--white);
     display: grid;
     grid-template-columns: repeat(7, auto);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(5, auto);
     background: rgb(49, 177, 76);
     gap: 1em;
 }
 
 .recentGuides{
-    grid-area: 1/1/5/4;
+    grid-area: 1/1/4/4;
     border: solid palevioletred;
 
 }
@@ -199,11 +199,11 @@ header .title h4{
 }
 
 .subscribeContainer{
-    grid-area: 3/5/4/7;
+    grid-area: 3/4/4/7;
     border: solid red;
 }
 
 .socialMedia{
-    grid-area: 5/1/5/7;
+    grid-area: 4/1/5/7;
     border: solid blue;
 }
