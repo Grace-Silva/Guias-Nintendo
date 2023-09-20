@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600&display=swap');
+
+:root{
+    --nintendoRed: #E60012;
+    --cristalRed: #e600124d;
+    --white: #fafafa;
+    --nintendoRedHover: #BF0010;
+    --black: #1f1f1f;
+    --innerWidth: 2em 4em;
+    --transition: all ease .3s; 
+}
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(31,31,31,0.5) 50%, rgba(0,0,0,1) 100%), url("../img/pattern.png");  
+    min-height: 100vh;
+    background-repeat: repeat;
+}
+
+header .title{
+    background: var(--white);
+    color: var(--black);
+    text-align: center;
+    padding: .5em;
+}
+
+header .title h3{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+header .title h4{
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.navbar{
+    display: flex;
+    padding: var(--innerWidth);
+    background: var(--nintendoRed);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo .logoImage{
+    width: 160px;
+}
+
+.navbar .navLinks{
+    display: flex;
+    gap: 0 .8em;
+}
+
+.navbar .navLinks .navLink{
+    display: inline-block;
+    padding: .8em;
+}
+
+.navbar .navLinks .navLink a, i{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.20em;
+    transition: var(--transition);
+    border-bottom: 2px solid transparent;
+}
+.navbar .navLinks .navLink a:hover{
+    border-bottom: 2px solid var(--white);
+}
+
+.navbar .navLinks .navLink i{
+    margin-left: 6px;
+}
+.navbar .navLinks .navLink .vertical-menu{
+    width: 200px;
+    text-align: center;
+    background: var(--cristalRed);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8.7px);
+    -webkit-backdrop-filter: blur(8.7px);
+    border: 1px solid rgba(230, 0, 18, 0.62);
+}
+
+.vertical-menu li{
+    margin: 12px 0;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.vertical-menu li:hover{
+    background: var(--nintendoRedHover);
+}
+
+.vertical-menu li a{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.15em;
+}
