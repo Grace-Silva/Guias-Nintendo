@@ -173,7 +173,7 @@ header .title h4{
     padding: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .recentGuides .mainGuide{
@@ -219,14 +219,21 @@ header .title h4{
     border: solid green;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.popularGuides .popularGuidesContainer img{
-    width: 150px;
+.popularGuides .popularGuidesContainer{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1em 2em;
 }
+
+.popularGuides .popularGuidesContainer img{
+    width: 127px;
+    border-radius: 4px;
+}
+
 
 .subscribeContainer{
     grid-area: 3/4/4/7;
