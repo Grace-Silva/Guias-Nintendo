@@ -155,7 +155,6 @@ header .title h4{
 
 /* main section */
 .gridContainer{
-    text-align: center;
     justify-content: center;
     width: 100vw;
     border: solid black;
@@ -165,13 +164,16 @@ header .title h4{
     grid-template-columns: repeat(7, auto);
     grid-template-rows: repeat(5, auto);
     background: rgb(49, 177, 76);
-    gap: 1em;
+    gap: 2em;
 }
 
 .recentGuides{
     grid-area: 1/1/4/4;
     border: solid palevioletred;
-
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .recentGuides .mainGuide{
@@ -179,11 +181,38 @@ header .title h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1.2em;
 }
-/*
-.gridContainer .recentGuides .mainGuide .mainGuideImg{
+
+.recentGuides .mainGuide .mainGuideImg{
     width: 100%;
-}*/
+    border-radius: 4px;
+}
+
+.gridTitle{
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.mainGuide .mainGuideParagraph{
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.3;
+    letter-spacing: .5px;
+}
+
+.recentGuides .recentsGuidesContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 1em;
+    justify-content: space-around;
+}
+
+.recentGuides .recentsGuidesContainer img{
+    border-radius: 4px;
+    width: 180px;
+}
 
 .popularGuides{
     grid-area: 1/4/3/7;
@@ -191,6 +220,7 @@ header .title h4{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     align-items: center;
 }
 
