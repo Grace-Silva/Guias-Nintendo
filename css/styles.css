@@ -76,15 +76,18 @@ header .title h4{
     background: transparent;
     transition: var(--transition);
 }
-.navbar .navLinks .navLink:hover{
+.navbar .navLinks .navLink:nth-child(1):hover{
     background: var(--cristalRed);
+}
+
+.navbar .navLinks .navLink:nth-child(2){
+    padding: 8px 24px;
+    transition: var(--transition);
+
 }
 
 .navbar .navLinks .navLink:nth-child(3){
     padding: 0;
-}
-.navbar .navLinks .navLink:nth-child(3):hover{
-    background: transparent;
 }
 
 .navbar .navLinks .navLink a, i{
@@ -98,7 +101,7 @@ header .title h4{
 }
 
 .navLink .vertical-menu{
-    display: none;
+    visibility: hidden;
     position: absolute;
     text-align: center;
     background: var(--black);
@@ -108,6 +111,7 @@ header .title h4{
     -webkit-backdrop-filter: blur(8.7px);
     border: none;
     z-index: 1000;
+    transition: var(--transition);
 }
 
 .vertical-menu li{
@@ -127,7 +131,7 @@ header .title h4{
 
 .navbar .navLinks .navLink:nth-child(2):hover .vertical-menu
 {
-    display: block;
+    visibility: visible;
 }
 
 .search{
@@ -165,9 +169,11 @@ header .title h4{
     grid-template-columns: repeat(7, auto);
     grid-template-rows: repeat(4, auto);
     gap: 2em;
+    justify-content: space-around;
 }
 
 .recentGuides{
+    border: solid red;
     grid-area: 1/1/4/4;
     padding: 1em;
     display: flex;
@@ -228,12 +234,17 @@ header .title h4{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border: solid white;
 }
 
 .popularGuides .popularGuidesContainer{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 1em 2em;
+    grid-template-rows: repeat(3, auto);
+    gap: 1em;
+    border: slateblue solid;
+    justify-content: space-evenly;
 }
 
 .popularGuides .popularGuidesContainer img{
@@ -251,6 +262,7 @@ header .title h4{
 
 
 .subscribeContainer{
+    border: solid green;
     grid-area: 3/4/4/7;
     padding: 0 1em;
 }
