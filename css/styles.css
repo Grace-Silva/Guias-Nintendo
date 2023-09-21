@@ -211,6 +211,14 @@ header .title h4{
 .recentGuides .recentsGuidesContainer img{
     border-radius: 4px;
     width: 180px;
+    transition: var(--transition);
+    overflow: hidden;
+    opacity: .8;
+    cursor: pointer;
+}
+.recentGuides .recentsGuidesContainer img:hover{
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 .popularGuides{
@@ -228,8 +236,16 @@ header .title h4{
 }
 
 .popularGuides .popularGuidesContainer img{
-    width: 127px;
+    width: 115px;
     border-radius: 4px;
+    transition: var(--transition);
+    overflow: hidden;
+    opacity: .8;
+    cursor: pointer;
+}
+.popularGuides .popularGuidesContainer img:hover{
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 
