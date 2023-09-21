@@ -7,6 +7,7 @@
     --white: #fafafa;
     --nintendoRedHover: #BF0010;
     --black: #1f1f1f;
+    --intenseBlack: #000;
     --innerWidth: 2em 4em;
     --transition: all ease .3s; 
 }
@@ -161,7 +162,7 @@ header .title h4{
     color: var(--white);
     display: grid;
     grid-template-columns: repeat(7, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
     gap: 2em;
 }
 
@@ -234,7 +235,6 @@ header .title h4{
 
 .subscribeContainer{
     grid-area: 3/4/4/7;
-    border: solid red;
     padding: 0 1em;
 }
 
@@ -245,6 +245,26 @@ header .title h4{
 }
 
 .socialMedia{
-    grid-area: 4/1/5/7;
     border: solid blue;
+    display: flex;
+    justify-content: space-around;
+    background: var(--intenseBlack);
+    padding: var(--innerWidth);
+    align-items: center;
+}
+
+.socialMedia a{
+    display: inline-block;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1em;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.socialMedia a:hover{
+    transform: scale(1.1);
+}
+
+.socialMedia i{
+    font-size: 1.2em;
 }
