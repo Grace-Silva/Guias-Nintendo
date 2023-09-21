@@ -100,12 +100,12 @@ header .title h4{
     display: none;
     position: absolute;
     text-align: center;
-    background: var(--cristalRed);
+    background: var(--black);
     border-radius: 4px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(8.7px);
     -webkit-backdrop-filter: blur(8.7px);
-    border: 1px solid rgba(230, 0, 18, 0.62);
+    border: 1px solid var(--black);
 }
 
 .vertical-menu li{
@@ -157,19 +157,16 @@ header .title h4{
 .gridContainer{
     justify-content: center;
     width: 100vw;
-    border: solid black;
     padding: var(--innerWidth);
     color: var(--white);
     display: grid;
     grid-template-columns: repeat(7, auto);
     grid-template-rows: repeat(5, auto);
-    background: rgb(49, 177, 76);
     gap: 2em;
 }
 
 .recentGuides{
     grid-area: 1/1/4/4;
-    border: solid palevioletred;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -202,6 +199,7 @@ header .title h4{
 }
 
 .recentGuides .recentsGuidesContainer{
+    margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
@@ -216,7 +214,6 @@ header .title h4{
 
 .popularGuides{
     grid-area: 1/4/3/7;
-    border: solid green;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -238,6 +235,13 @@ header .title h4{
 .subscribeContainer{
     grid-area: 3/4/4/7;
     border: solid red;
+    padding: 0 1em;
+}
+
+.subscribeContainer .subscribeTitle{
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 8px;
 }
 
 .socialMedia{
