@@ -245,10 +245,9 @@ header .title h4{
 }
 
 .socialMedia{
-    border: solid blue;
     display: flex;
     justify-content: space-around;
-    background: var(--intenseBlack);
+    background: var(--cristalBlack);
     padding: var(--innerWidth);
     align-items: center;
 }
@@ -267,4 +266,40 @@ header .title h4{
 
 .socialMedia i{
     font-size: 1.2em;
+}
+
+footer{
+    background: var(--intenseBlack);
+    color: var(--white);
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer h5{
+    font-weight: 600;
+    font-size: .8em;
+}
+
+footer h6{
+    font-size: 1em;
+}
+
+footer .heart{
+    display: inline-block;
+    animation: beat 1s infinite ease-in-out alternate;
+}
+
+@keyframes beat{
+    
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+footer a{
+    color: var(--white);
 }
