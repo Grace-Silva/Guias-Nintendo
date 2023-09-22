@@ -2,14 +2,15 @@
 
 :root{
     --nintendoRed: #E60012;
-    --cristalRed: rgba(191, 0, 16, 0.5);
-    --cristalBlack: rgba(31, 31, 31, 0.5);
+    --cristalRed: rgba(191, 0, 16, 0.3);
+    --cristalBlack: rgba(0, 0, 0, 0.5);
     --white: #fafafa;
     --nintendoRedHover: #BF0010;
     --black: #1f1f1f;
     --intenseBlack: #000;
     --innerWidth: 2em 4em;
-    --transition: all ease .3s; 
+    --transition: all ease .3s;
+    --boxShadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 *{
@@ -66,7 +67,7 @@ header .title h4{
 
 .navbar .navLinks{
     display: flex;
-    gap: 0 1.2em;
+    gap: 0 1.3em;
 }
 
 .navbar .navLinks .navLink{
@@ -86,18 +87,10 @@ header .title h4{
 
 }
 
-.navbar .navLinks .navLink:nth-child(3){
-    padding: 0;
-}
-
 .navbar .navLinks .navLink a, i{
     color: var(--white);
     font-weight: 600;
     font-size: 1.1em;
-}
-
-.navbar .navLinks .navLink i{
-    font-size: 1em;
 }
 
 .navLink .vertical-menu{
@@ -167,12 +160,14 @@ header .title h4{
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(4, auto);
     gap: 2em 4em;
-    border: solid green;
 }
 
 /* guia principal - izquierda */
 .recentGuides{
-    border: solid red;
+    background: var(--cristalBlack);
+    border-radius: 8px;
+    box-shadow: var(--boxShadow);
+    border: none;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -204,6 +199,10 @@ header .title h4{
 
 /* guías populares / right */
 .popularGuides{
+    background: var(--cristalBlack);
+    border-radius: 8px;
+    box-shadow: var(--boxShadow);
+    border: none;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -211,7 +210,6 @@ header .title h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid white;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -219,10 +217,14 @@ header .title h4{
 }
 
 .popularGuides img{
-    width: 145px;
+    width: 140px;
+    opacity: .8;
     transition: var(--transition);
+    border-radius: 8px;
+    cursor: pointer;
 }
 .popularGuides img:hover{
+    opacity: 1;
     transform: scale(1.1);
 }
 
@@ -231,11 +233,11 @@ header .title h4{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    gap: 2em;
 }
 
 .gridContainer .moreGuides{
-    border: slateblue solid;
+
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -243,7 +245,7 @@ header .title h4{
 }
 
 .moreGuides img{
-    width: 160px;
+    width: 120px;
     border-radius: 4px;
     transition: var(--transition);
     overflow: hidden;
@@ -257,7 +259,10 @@ header .title h4{
 
 
 .subscribeContainer{
-    border: solid green;
+    background: var(--cristalRed);
+    border-radius: 8px;
+    box-shadow: var(--boxShadow);
+    border: none;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
@@ -308,7 +313,7 @@ footer{
 
 footer h5{
     font-weight: 600;
-    font-size: .8em;
+    font-size: .9em;
 }
 
 footer h6{
@@ -316,6 +321,7 @@ footer h6{
 }
 
 footer .heart{
+    font-size: 1.2em;
     display: inline-block;
     animation: beat 1s infinite ease-in-out alternate;
 }
