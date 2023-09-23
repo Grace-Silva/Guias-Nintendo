@@ -53,12 +53,33 @@ header .title h4{
     font-weight: 600;
 }
 
+.toggleMenu{
+    padding: .8em;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: var(--nintendoRedHover);
+    cursor: pointer;
+    transition: var(--transition);
+    display: none;
+    z-index: 10000;
+}
+.toggleMenu:active{
+    border: 1px solid var(--nintendoRed);
+    background: var(--cristalBlack);
+}
+
+.toggleMenu i{
+    font-size: 1em;
+}
+
 .navbar{
     display: flex;
     padding: var(--innerWidth);
     background: var(--nintendoRed);
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
+    position: relative;
 }
 
 .navbar .logo .logoImage{
@@ -423,6 +444,30 @@ footer a{
 
 /* 768px ipad / tablet */
 @media(max-width: 768px){
+
+
+    .toggleMenu{
+        display: block;
+    }
+
+    .navbar{
+        padding: 2em;
+    }
+
+    .navbar .navLinks{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--nintendoRed);
+        box-shadow: 0 2px 2px var(--cristalBlack);
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        border: 1px solid var(--nintendoRedHover);
+    }
 
 }
 
