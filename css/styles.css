@@ -365,6 +365,8 @@ footer a{
 }
 
 /* breakpoints */
+
+/* desktop / large laptop */
 @media(max-width: 1024px){
 
     .navbar{
@@ -423,7 +425,6 @@ footer a{
         grid-row-end: 4;
     }
 }
-
 
 /* 992px laptop */
 @media(max-width: 992px){
@@ -542,7 +543,6 @@ footer a{
     }
 }
 
-
 /* 480px mobile */
 @media(max-width: 480px){
     
@@ -568,8 +568,54 @@ footer a{
 
 }
 
-
-/* 320px small laptop */
+/* 320px ultra small */
 @media(max-width: 320px){
+
+    header .title{
+        padding: 1em;
+    }
+
+    header .title h3{
+        font-size: 1em;
+        font-weight: 600;
+    }
     
+    header .title h4{
+        font-size: .8em;
+        font-weight: 600;
+    }
+
+    .navbar .logo .logoImage{
+        width: 110px;
+    }
+
+    .navbar .navLinks{
+        padding: 1em;
+    }
+
+    .navLink .vertical-menu{
+        position: absolute;
+        top: -280%;
+        right: -120%;
+    }
+
+    .gridContainer{
+        padding: 2em;
+    }
+
+    .popularGuides{
+        padding: 1.1em;
+    }
+
+    .popularGuides .covers{
+        gap: 1em;
+    }
+
+    .popularGuides .covers img{
+        width: 100px;
+    }
+
+    .moreGuides{
+        display: none;
+    }
 }
