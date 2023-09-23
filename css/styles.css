@@ -211,7 +211,6 @@ header .title h4{
     flex-direction: column;
     align-items: center;
     display: flex;
-    flex-direction: column;
     gap: 2em;
     padding: 2em 0;
 }
@@ -298,6 +297,9 @@ header .title h4{
     cursor: pointer;
 }
 .socialMedia a:hover{
+    transform: scale(1.3,1.3);
+}
+.socialMedia a:nth-child(5):hover{
     transform: scale(1.1);
 }
 
@@ -358,7 +360,8 @@ footer a{
     }
 
     .gridContainer{
-        gap: 4em;
+        padding: 2em;
+        gap: 3em 4em;
     }
 
     .recentGuides .mainGuide{
@@ -374,7 +377,7 @@ footer a{
     }
 
     .popularGuides .covers img{
-        width: 90px;
+        width: 110px;
     }
 
     .gridContainer .moreGuides{
@@ -384,12 +387,16 @@ footer a{
         grid-row-end: 5;
     }
 
+    .moreGuides img{
+        width: 150px;
+    }
+
     .socialMedia{
         padding: 2em;
     }
 
     .subscribeContainer{
-        padding: 0 .5em;
+        padding: 1em;
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 3;
@@ -397,17 +404,27 @@ footer a{
     }
 }
 
+
 /* 992px laptop */
 @media(max-width: 992px){
 
+    .navbar{
+        padding: 1.5em;
+    }
+
+    .navbar .navLinks{
+        gap: 0 1.3em;
+    }
+
+    .moreGuides img{
+        width: 140px;
+    }
 }
 
+/* 768px ipad / tablet */
+@media(max-width: 768px){
 
-/* 768px ipad/tablet */
-@media(max-width: 992px){
-    
 }
-
 
 /* 576px mobile */
 @media(max-width: 576px){
