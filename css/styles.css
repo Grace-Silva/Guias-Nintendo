@@ -532,7 +532,14 @@ footer a{
 
 /* 576px mobile */
 @media(max-width: 576px){
-    
+
+    .popularGuides .covers{
+        justify-content: center;
+    }
+
+    .gridContainer .moreGuides img{
+        width: 130px;
+    }
 }
 
 
