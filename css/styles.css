@@ -546,6 +546,26 @@ footer a{
 /* 480px mobile */
 @media(max-width: 480px){
     
+    .recentGuides .mainGuideParagraph{
+        font-size: 1em;
+    }
+
+    .popularGuides{
+        padding: 2em 1.1em;
+    }
+
+    .popularGuides .covers img{
+        width: 130px;
+    }
+
+    .moreGuides .covers{
+        justify-content: space-evenly;
+    }
+
+    .gridContainer .moreGuides img{
+        width: 150px;
+    }
+
 }
 
 
