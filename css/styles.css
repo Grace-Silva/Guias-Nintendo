@@ -357,12 +357,31 @@ footer a{
         gap: 0 2em;
     }
 
+    .gridContainer{
+        gap: 4em;
+    }
+
     .recentGuides .mainGuide{
         gap: 2em;
     }
 
+    .popularGuides{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-content: space-around;
+    }
+
     .popularGuides .covers img{
         width: 90px;
+    }
+
+    .gridContainer .moreGuides{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
     }
 
     .socialMedia{
@@ -370,7 +389,11 @@ footer a{
     }
 
     .subscribeContainer{
-        padding: 0;
+        padding: 0 .5em;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
 }
 
