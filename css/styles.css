@@ -105,7 +105,7 @@ header .title h4{
 .navbar .navLinks .navLink:nth-child(2){
     padding: 8px 24px;
     transition: var(--transition);
-
+    position: relative;
 }
 
 .navbar .navLinks .navLink a, i{
@@ -456,17 +456,34 @@ footer a{
 
     .navbar .navLinks{
         display: flex;
+        visibility: hidden;
         flex-direction: column;
         gap: 2em;
+        padding: 2em;
         position: absolute;
         top: 100%;
-        left: 0;
+        left: -100%;
         background: var(--nintendoRed);
         box-shadow: 0 2px 2px var(--cristalBlack);
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         height: 100vh;
         border: 1px solid var(--nintendoRedHover);
+        transition: var(--transition);
+    }
+    #navCheck:checked ~ .navbar .navLinks{
+        visibility: visible;
+        left: 0;
+    }
+
+    .navbar .navLinks .navLink:nth-child(2){
+        padding: 8px 12px;
+    }
+
+    .navLink .vertical-menu{
+        position: absolute;
+        top: -280%;
+        right: -140%;
     }
 
 }
