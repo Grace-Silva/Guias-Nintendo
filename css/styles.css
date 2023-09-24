@@ -142,9 +142,13 @@ header .title h4{
     font-weight: 600;
     font-size: 1.15em;
 }
-
+/*
 .navbar .navLinks .navLink:nth-child(2):hover .vertical-menu
 {
+    visibility: visible;
+}*/
+
+.vertical-menu.hide{
     visibility: visible;
 }
 
