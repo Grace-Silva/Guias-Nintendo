@@ -36,6 +36,29 @@ body{
     overflow-x: hidden;
 }
 
+/* Works on Firefox */
+* {
+    scrollbar-width: 12px;
+    scrollbar-color: var(--nintendoRedHover) var(--cristalBlack);
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar{
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--cristalBlack);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--cristalRed);
+    border-radius: 20px;
+    border: var(--black);
+  }
+  
+
+
 header .title{
     background: var(--white);
     color: var(--black);
