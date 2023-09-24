@@ -98,7 +98,7 @@ header .title h4{
     background: transparent;
     transition: var(--transition);
 }
-.navbar .navLinks .navLink:nth-child(1):hover{
+.navbar .navLinks .navLink:hover{
     background: var(--cristalRed);
 }
 
@@ -106,6 +106,10 @@ header .title h4{
     padding: 8px 24px;
     transition: var(--transition);
     position: relative;
+}
+
+.navbar .navLinks .navLink:nth-child(3){
+    background: transparent;
 }
 
 .navbar .navLinks .navLink a, i{
@@ -241,10 +245,10 @@ header .title h4{
 }
 
 .popularGuides img{
-    width: 140px;
+    width: 154px;
     opacity: .8;
     transition: var(--transition);
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
 }
 .popularGuides img:hover{
@@ -266,6 +270,8 @@ header .title h4{
     grid-row-start: 4;
     grid-row-end: 5;
 }
+
+
 
 .moreGuides img{
     width: 120px;
@@ -482,6 +488,11 @@ footer a{
 
     .navbar .navLinks .navLink:nth-child(2){
         padding: 8px 12px;
+    }
+
+    .navbar .navLinks .navLink:nth-child(2) i{
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
     }
 
     .navLink .vertical-menu{
