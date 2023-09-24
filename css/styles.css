@@ -409,7 +409,7 @@ footer a{
     }
 
     .popularGuides .covers img{
-        width: 110px;
+        width: 120px;
     }
 
     .gridContainer .moreGuides{
@@ -448,7 +448,7 @@ footer a{
     }
 
     .moreGuides img{
-        width: 140px;
+        width: 150px;
     }
 }
 
@@ -516,6 +516,7 @@ footer a{
     }
 
     .popularGuides{
+        padding: 1em 2em;
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 2;
@@ -523,7 +524,7 @@ footer a{
     }
 
     .popularGuides .covers{
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .gridContainer .moreGuides{
@@ -632,5 +633,17 @@ footer a{
 
     .moreGuides{
         display: none;
+    }
+
+    .socialMedia{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1em 3em;
+    }
+
+    footer{
+        padding: 1.2em;
     }
 }
