@@ -1,263 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rediseño Guias Nintendo</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="shortcut icon"
-      href="./img/favicon-96x96.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- start header -->
-    <header>
-      <div class="title">
-        <h3>Guias, Trucos y Ayudas de Juegos de Nintendo</h3>
-        <h4>Página Oficial de Nintendo Ibérica</h4>
-      </div>
 
-      <input type="checkbox" id="navCheck" hidden />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rediseño Guias Nintendo</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="shortcut icon" href="./img/favicon-96x96.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
 
-      <!-- barra de navegación -->
-      <nav class="navbar">
-        <!--logo-->
-        <a href="#" class="logo">
-          <img class="logoImage" src="./img/nintendo-logo.png" alt="" />
-        </a>
+<body>
+  <!-- start header -->
+  <header>
+    <div class="title">
+      <h3>Guias, Trucos y Ayudas de Juegos de Nintendo</h3>
+      <h4>Página Oficial de Nintendo Ibérica</h4>
+    </div>
 
-        <!--navLinks-->
-        <ul class="navLinks">
-          <li class="navLink"><a href=""> Inicio </a></li>
-          <!-- menu desplegable -->
-          <li class="navLink" onclick="mostrarConsolas()">
-            <a href="#"> Consolas </a><i class="fa-solid fa-caret-down"></i>
 
-            <ul class="vertical-menu">
-              <li><a href="#">3DS</a></li>
-              <li><a href="#">amiibo</a></li>
-              <li><a href="#">DS</a></li>
-              <li><a href="#">GameBoy</a></li>
-              <li><a href="#">GameCube</a></li>
-              <li><a href="#">GBA</a></li>
-              <li><a href="#">N64</a></li>
-              <li><a href="#">Switch</a></li>
-              <li><a href="#">Wii</a></li>
-              <li><a href="#">Wii U</a></li>
+    <input type="checkbox" id="navCheck" hidden />
+
+    <!-- barra de navegación -->
+    <nav class="navbar">
+      <!--logo-->
+      <a href="" class="logo">
+        <img class="logoImage" src="./img/nintendo-logo.png" alt="" />
+      </a>
+
+      <!--navLinks-->
+      <ul class="navLinks"> <!-- inicio, consolas y búsqueda -->
+
+        <li class="navLink"><a href="#"> Inicio </a></li>
+
+        <!-- menu desplegable (consolas disponibles) -->
+        <li class="navLink">
+
+          <button class="consoles-button" onclick="mostrarConsolas()">
+            <span>Consolas</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>  
+            <ul class="consoles-menu">
+              <li><a href="">3DS</a></li>
+              <li><a href="">amiibo</a></li>
+              <li><a href="">DS</a></li>
+              <li><a href="">GameBoy</a></li>
+              <li><a href="">GameCube</a></li>
+              <li><a href="">GBA</a></li>
+              <li><a href="">N64</a></li>
+              <li><a href="">Switch</a></li>
+              <li><a href="">Wii</a></li>
+              <li><a href="">Wii U</a></li>
             </ul>
-          </li>
+        </li>
 
-          <!-- barra de búsqueda -->
-          <li class="navLink">
-            <div class="search">
-              <input type="text" placeholder="Buscar" />
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </li>
-        </ul>
+        <!-- barra de búsqueda -->
+        <li class="navLink">
+          <div class="search">
+            <input type="text" placeholder="Buscar" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </li>
+      </ul>
 
-        <label for="navCheck" class="toggleMenu"
-          ><i class="fa-solid fa-bars-staggered"></i
-        ></label>
-      </nav>
-    </header>
+      <label for="navCheck" class="toggleMenu"><i class="fa-solid fa-bars-staggered"></i></label>
+    </nav>
+  </header>
 
-    <!-- main section -->
-    <main class="gridContainer">
-      <!-- guia principal -->
-      <section class="recentGuides">
-        <h1 class="gridTitle">Guias Recientes</h1>
+  <!-- main section -->
+  <main class="gridContainer">
+    <!-- guia principal -->
+    <section class="recentGuides">
+      <h1 class="gridTitle">Guias Recientes</h1>
 
-        <img
-          src="./metroidDread.png"
-          alt="metroid drade"
-          class="mainGuideImg"
-        />
-        <p class="mainGuideParagraph">
-          Después de investigar una misteriosa transmisión del planeta ZDR,
-          Samus se enfrenta a un enigmático enemigo que la atrapa en este
-          peligroso mundo. Este remoto planeta está infestado de despiadadas
-          formas de vida alienígenas y siniestros mecanismos llamados E.M.M.I.
-          Sé cazadora y presa a la vez mientras te abres camino a través de un
-          peligroso mundo en la aventura más intensa de Samus hasta ahora.
-          <br />
-          Samus ahora es más ágil y versátil
-          <br />
-          Guía a Samus Aran, la cazarrecompensas intergaláctica que fue acogida
-          por una tribu ancestral, y navega los diversos ambientes de un
-          peligroso mundo. Supera obstáculos mientras corres, deslízate por
-          espacios estrechos, domina a tus enemigos con contragolpes y ábrete
-          paso en combates por todo el planeta. A través de sus innumerables
-          misiones Samus jamás se ha enfrentado a una amenaza como aquella que
-          acecha al planeta ZDR.
-        </p>
-      </section>
-
-      <!-- guias mas populares -->
-      <section class="popularGuides">
-        <h1 class="gridTitle">Guías Populares</h1>
-
-        <div class="covers">
-          <a href="" target="_blank">
-            <img src="./img/covers/aside/linkAwakening.png" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/super-mario-odyssey/guia-super-mario-odyssey/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/aside/marioOdysey.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2a_WII/zelda_twilight/zelda_twilight_sp/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/aside/twilightPrincess.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/animal-crossing-new-horizons/guia-animal-crossing-new-horizons/welcome.html"
-            target="_blank"
-            ><img src="./img/covers/aside/animalCrossing.jpg" alt=""
-          /></a>
-
-          <a href="" target="_blank">
-            <img src="./img/covers/aside/botw.jpg" alt="" />
-          </a>
-
-          <a href="" target="_blank">
-            <img src="./img/covers/aside/pokemonEscarlata.jpg" alt="" />
-          </a>
-        </div>
-      </section>
-
-      <!--más guías -->
-      <section class="moreGuides">
-        <div class="covers">
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/kirby-y-la-tierra-olvidada/guia-kirby-y-la-tierra-olvidada/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/kirby.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/mario-golf-super-rush/guia-mario-golf-super-rush/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/majorasMaskn64.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/warioware-get-it-together/guia-warioware-get-it-together/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/wario-ware.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/metroid-dread/guia-metroid-dread/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/samusReturn.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/mario-party-superstars/guia-mario-party-superstars/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/mario-party-superstars.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/monster-hunter-rise/guia-monster-hunter-rise/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/minishCap.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/the-legend-of-zelda-skyward-sword-hd/guia-the-legend-of-zelda-skyward-sword-hd/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/skyward-sword.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/kirby-y-la-tierra-olvidada/guia-kirby-y-la-tierra-olvidada/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/pokemonEmerald.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/kirby-y-la-tierra-olvidada/guia-kirby-y-la-tierra-olvidada/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/pokemonStadium.jpg" alt="" />
-          </a>
-
-          <a
-            href="https://www.guiasnintendo.com/2c-switch/kirby-y-la-tierra-olvidada/guia-kirby-y-la-tierra-olvidada/welcome.html"
-            target="_blank"
-          >
-            <img src="./img/covers/starfox.jpg" alt="" />
-          </a>
-        </div>
-      </section>
-
-      <!-- formulario suscripción -->
-      <section class="subscribeContainer">
-        <h4 class="subscribeTitle">
-          Suscríbete para estar al día con nuestras nuevas guías, Secretos,
-          Recompensas y Más
-        </h4>
-        <div class="search subscribeForm">
-          <input type="text" placeholder="Suscríbete" />
-          <i class="fa-solid fa-arrow-right"></i>
-        </div>
-      </section>
-    </main>
-
-    <!-- redes sociales -->
-    <section class="socialMedia">
-      <a href="">
-        <i class="fa-brands fa-twitch socialMediaIcon"></i>
-      </a>
-
-      <a href="">
-        <i class="fa-brands fa-youtube socialMediaIcon"></i>
-      </a>
-
-      <a href="">
-        <i class="fa-brands fa-discord socialMediaIcon"></i>
-      </a>
-
-      <a href="">
-        <i class="fa-brands fa-reddit-alien socialMediaIcon"></i>
-      </a>
-
-      <a href=""
-        >Soporte Técnico
-        <i class="fa-solid fa-screwdriver-wrench"></i>
-      </a>
+      <img src="./metroidDread.png" alt="metroid drade" class="mainGuideImg" />
+      <p class="mainGuideParagraph">
+        Después de investigar una misteriosa transmisión del planeta ZDR,
+        Samus se enfrenta a un enigmático enemigo que la atrapa en este
+        peligroso mundo. Este remoto planeta está infestado de despiadadas
+        formas de vida alienígenas y siniestros mecanismos llamados E.M.M.I.
+        Sé cazadora y presa a la vez mientras te abres camino a través de un
+        peligroso mundo en la aventura más intensa de Samus hasta ahora.
+        <br />
+        Samus ahora es más ágil y versátil
+        <br />
+        Guía a Samus Aran, la cazarrecompensas intergaláctica que fue acogida
+        por una tribu ancestral, y navega los diversos ambientes de un
+        peligroso mundo. Supera obstáculos mientras corres, deslízate por
+        espacios estrechos, domina a tus enemigos con contragolpes y ábrete
+        paso en combates por todo el planeta. A través de sus innumerables
+        misiones Samus jamás se ha enfrentado a una amenaza como aquella que
+        acecha al planeta ZDR.
+      </p>
     </section>
 
-    <footer>
-      <h5>©Nintendo Ibérica - Todos los Derechos Reservados</h5>
-      <h6>
-        Rediseño Hecho con <span class="heart">❤️</span> por
-        <a href="https://github.com/Grace-Silva" target="_blank">Grace Silva</a>
-      </h6>
-    </footer>
+    <!-- guias mas populares -->
+    <section class="popularGuides">
+      <h1 class="gridTitle">Guías Populares</h1>
 
-    <script src="./src/main.js"></script>
-  </body>
+      <div class="covers">
+        <a href="" target="_blank">
+          <img src="./img/covers/aside/linkAwakening.png" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/super-mario-odyssey/guia-super-mario-odyssey/welcome.html"
+          target="_blank">
+          <img src="./img/covers/aside/marioOdysey.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2a_WII/zelda_twilight/zelda_twilight_sp/welcome.html" target="_blank">
+          <img src="./img/covers/aside/twilightPrincess.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/animal-crossing-new-horizons/guia-animal-crossing-new-horizons/welcome.html"
+          target="_blank"><img src="./img/covers/aside/animalCrossing.jpg" alt="" /></a>
+
+        <a href="" target="_blank">
+          <img src="./img/covers/aside/botw.jpg" alt="" />
+        </a>
+
+        <a href="" target="_blank">
+          <img src="./img/covers/aside/pokemonEscarlata.jpg" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <!--más guías -->
+    <section class="moreGuides">
+      <div class="covers">
+        <a href="https://www.guiasnintendo.com/2c-switch/kirby-y-la-tierra-olvidada/guia-kirby-y-la-tierra-olvidada/welcome.html"
+          target="_blank">
+          <img src="./img/covers/kirby.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/mario-golf-super-rush/guia-mario-golf-super-rush/welcome.html"
+          target="_blank">
+          <img src="./img/covers/majorasMaskn64.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/warioware-get-it-together/guia-warioware-get-it-together/welcome.html"
+          target="_blank">
+          <img src="./img/covers/wario-ware.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/metroid-dread/guia-metroid-dread/welcome.html" target="_blank">
+          <img src="./img/covers/samusReturn.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/mario-party-superstars/guia-mario-party-superstars/welcome.html"
+          target="_blank">
+          <img src="./img/covers/mario-party-superstars.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/monster-hunter-rise/guia-monster-hunter-rise/welcome.html"
+          target="_blank">
+          <img src="./img/covers/minishCap.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/the-legend-of-zelda-skyward-sword-hd/guia-the-legend-of-zelda-skyward-sword-hd/welcome.html"
+          target="_blank">
+          <img src="./img/covers/skyward-sword.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/kirby-y-la-tierra-olvidada/guia-kirby-y-la-tierra-olvidada/welcome.html"
+          target="_blank">
+          <img src="./img/covers/pokemonEmerald.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/kirby-y-la-tierra-olvidada/guia-kirby-y-la-tierra-olvidada/welcome.html"
+          target="_blank">
+          <img src="./img/covers/pokemonStadium.jpg" alt="" />
+        </a>
+
+        <a href="https://www.guiasnintendo.com/2c-switch/kirby-y-la-tierra-olvidada/guia-kirby-y-la-tierra-olvidada/welcome.html"
+          target="_blank">
+          <img src="./img/covers/starfox.jpg" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <!-- formulario suscripción -->
+    <section class="subscribeContainer">
+      <h4 class="subscribeTitle">
+        Suscríbete para estar al día con nuestras nuevas guías, Secretos,
+        Recompensas y Más
+      </h4>
+      <div class="search subscribeForm">
+        <input type="text" placeholder="Suscríbete" />
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </section>
+  </main>
+
+  <!-- redes sociales -->
+  <section class="socialMedia">
+    <a href="">
+      <i class="fa-brands fa-twitch socialMediaIcon"></i>
+    </a>
+
+    <a href="">
+      <i class="fa-brands fa-youtube socialMediaIcon"></i>
+    </a>
+
+    <a href="">
+      <i class="fa-brands fa-discord socialMediaIcon"></i>
+    </a>
+
+    <a href="">
+      <i class="fa-brands fa-reddit-alien socialMediaIcon"></i>
+    </a>
+
+    <a href="">Soporte Técnico
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+    </a>
+  </section>
+
+  <footer>
+    <h5>©Nintendo Ibérica - Todos los Derechos Reservados</h5>
+    <h6>
+      Rediseño Hecho con <span class="heart">❤️</span> por
+      <a href="https://github.com/Grace-Silva" target="_blank">Grace Silva</a>
+    </h6>
+  </footer>
+
+  <script src="./src/main.js"></script>
+</body>
+
 </html>
