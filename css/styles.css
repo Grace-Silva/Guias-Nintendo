@@ -488,6 +488,12 @@ footer a {
   .popularGuides .covers img {
     min-width: 132px;
   }
+
+  .covers{
+    gap: 1.2em;
+    /*grid-template-columns: repeat(auto-fit, minmax(140px, 1fr) );*/
+  }
+
 /*
   .recentGuides {
     grid-column-start: 1;
@@ -530,36 +536,40 @@ footer a {
 
 /* 576px mobile */
 @media (max-width: 576px) {
-  .popularGuides .covers {
+
+  /*.popularGuides .covers {
     justify-content: center;
+  }*/
+/**/
+  .navbar .navLinks{
+    padding: 1em;
   }
 
-  .gridContainer .moreGuides img {
-    width: 130px;
+  .popularGuides .covers{
+    gap: .8em;
   }
+  .popularGuides .covers img {
+    min-width: 120px;
+  }
+
 }
 
 /* 480px mobile */
 @media (max-width: 480px) {
+  .gridContainer{
+    padding: 1em;
+  }
   .recentGuides .mainGuideParagraph {
     font-size: 1em;
   }
 
   .popularGuides {
-    padding: 2em 1.1em;
+    padding: 1em;
   }
-
   .popularGuides .covers img {
-    width: 130px;
+    min-width: 160px;
   }
 
-  .moreGuides .covers {
-    justify-content: space-evenly;
-  }
-
-  .gridContainer .moreGuides img {
-    width: 150px;
-  }
 }
 
 /* 320px ultra small */
@@ -586,12 +596,26 @@ footer a {
     padding: 1em;
   }
 
-  .navLink .consoles-menu {
+  /*.navLink .consoles-menu {
     position: absolute;
     top: -280%;
     right: -120%;
+  }*/
+  .navbar .consoles-menu {
+    width: 100vw; /* Ocupa todo el ancho */
+    left: 0; /* Se alinea al borde izquierdo */
+    transform: none; /* Elimina desplazamiento */
+    height: max-content; /* Altura según contenido */
+    overflow-y: auto; /* Scroll vertical si es necesario */
+    border-radius: 0; /* Opcional: mejor ajuste visual */
   }
 
+  /* Ajustar items del menú */
+  .consoles-menu .item-consola {
+    min-width: 70px; /* Tamaño mínimo por item */
+    padding: 0.5rem; /* Espaciado interno reducido */
+  }
+}
   .gridContainer {
     padding: 2em;
   }
@@ -603,15 +627,9 @@ footer a {
   .popularGuides .covers {
     gap: 1em;
   }
-
   .popularGuides .covers img {
-    width: 100px;
+    min-width: 80px;
   }
-
-  .moreGuides {
-    display: none;
-  }
-
   .socialMedia {
     display: flex;
     flex-direction: row;
